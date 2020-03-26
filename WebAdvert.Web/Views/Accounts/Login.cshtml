@@ -7,9 +7,9 @@
 <h1>Login</h1>
 
 <h5>
-    If you are not a member,you can
+    If you are not a registered,you can
     <a asp-controller="Accounts" asp-action="Signup">
-        Signup
+        Register
     </a> here.
 </h5>
 <hr />
@@ -33,14 +33,13 @@
                 </label>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Login" class="btn btn-primary" />
+            </div>
+            <div class="form-group">
+                <a asp-action="ForgetPassword" asp-controller="Accounts">Forget Password</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
